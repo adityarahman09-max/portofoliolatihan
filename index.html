@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potofolio</title>
+    <title>Portfolio - Industrial Design</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -58,11 +58,11 @@
     <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b-2 border-teal">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <h1 class="text-3xl title-font text-cream">ADITYA RAHMAN GUANTENG</h1>
+                <h1 class="text-3xl title-font text-cream">ADITYA RAHMAN</h1>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-cream hover:text-teal transition font-semibold">RUMAH</a>
+                    <a href="#home" class="text-cream hover:text-teal transition font-semibold">HOME</a>
                     <a href="#about" class="text-cream hover:text-teal transition font-semibold">ABOUT</a>
-                    <a href="#projects" class="text-cream hover:text-teal transition font-semibold">ACHIEVMENT</a>
+                    <a href="#projects" class="text-cream hover:text-teal transition font-semibold">PRESTASI</a>
                     <a href="#contact" class="text-cream hover:text-teal transition font-semibold">CONTACT</a>
                 </div>
                 <button class="md:hidden text-cream" id="menuBtn">
@@ -74,7 +74,7 @@
             <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
                 <a href="#home" class="block text-cream hover:text-teal transition font-semibold py-2">HOME</a>
                 <a href="#about" class="block text-cream hover:text-teal transition font-semibold py-2">ABOUT</a>
-                <a href="#projects" class="block text-cream hover:text-teal transition font-semibold py-2">ACHIEVMENT</a>
+                <a href="#projects" class="block text-cream hover:text-teal transition font-semibold py-2">PRESTASI</a>
                 <a href="#contact" class="block text-cream hover:text-teal transition font-semibold py-2">CONTACT</a>
             </div>
         </div>
@@ -98,7 +98,11 @@
                 </div>
                 <div class="relative">
                     <div class="bg-blue/20 absolute inset-0 transform rotate-3"></div>
-                    <div class="bg-black h-96 relative flex items-center justify-center border-4 border-teal">
+                    <div class="bg-black h-96 relative flex items-center justify-center border-4 border-teal overflow-hidden">
+                        
+                        <img src="FotoYu-OKY06440.jpg" alt="fotodiri" class="w-full h-full object-cover">
+                        
+                        <!-- Placeholder - Hapus div ini setelah menambahkan foto -->
                         <div class="text-center">
                             <div class="text-6xl title-font text-teal mb-2">10</div>
                             <div class="text-cream text-xl">Kelas SMK</div>
@@ -114,12 +118,16 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="md:col-span-1">
-                    <h3 class="text-5xl title-font text-teal mb-4">TENTANG</h3>
+                    <h3 class="text-5xl title-font text-teal mb-4">TENTANG <br>SAYA</h3>
                     <div class="bg-teal h-1 w-16"></div>
                 </div>
                 <div class="md:col-span-2">
                     <div class="mb-8">
-                        <div class="bg-blue/30 h-64 flex items-center justify-center border-4 border-teal mb-6">
+                        <div class="bg-blue/30 h-64 flex items-center justify-center border-4 border-teal mb-6 overflow-hidden">
+                            <!-- GANTI DENGAN FOTO PROFIL ANDA: Uncomment baris di bawah dan ganti 'path-foto-profil.jpg' dengan path foto Anda -->
+                            <img src="laptop.jpeg" alt="Foto Profil Aditya Rahman" class="w-full h-full object-cover">
+                            
+                            <!-- Placeholder - Hapus div ini setelah menambahkan foto -->
                             <div class="text-center text-cream">
                                 <svg class="w-20 h-20 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
@@ -145,7 +153,7 @@
                         </div>
                         <div class="border-l-4 border-teal pl-4">
                             <div class="text-3xl title-font text-teal mb-2">400+</div>
-                            <div class="text-cream">KM Running In 2025</div>
+                            <div class="text-cream">KM Running in 2025</div>
                         </div>
                     </div>
                 </div>
@@ -198,8 +206,8 @@
                                 </svg>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-xl title-font text-black mb-2">Juara 1 Lomba Web Design</h5>
-                                <p class="text-black/70 text-sm mb-3">Kompetisi tingkat sekolah dalam merancang website kreatif dan responsif</p>
+                                <h5 class="text-xl title-font text-black mb-2">Juara 1 Lomba Kreativitas Seni Tingkat Seni Jamkop Se Kota Malang</h5>
+                                <p class="text-black/70 text-sm mb-3">Juara 1 Lomba Seni dengan tampilan seni sekaligus atraksi api secara tim</p>
                                 <span class="bg-teal text-black px-3 py-1 text-xs font-bold">2024</span>
                             </div>
                         </div>
@@ -213,8 +221,8 @@
                                 </svg>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-xl title-font text-black mb-2">Finisher 10K</h5>
-                                <p class="text-black/70 text-sm mb-3">Menyelesaikan kategori 10 kilometer dengan waktu yang memuaskan</p>
+                                <h5 class="text-xl title-font text-black mb-2">Semifinalis Math and Logic Competition Universitas Airlangga</h5>
+                                <p class="text-black/70 text-sm mb-3">Semifinal lomba logika dan matematika di Universitas Airlangga Surabaya, dan langsung hadir secara offline di Unair</p>
                                 <span class="bg-teal text-black px-3 py-1 text-xs font-bold">2024</span>
                             </div>
                         </div>
@@ -228,8 +236,8 @@
                                 </svg>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-xl title-font text-black mb-2">Best Student Project</h5>
-                                <p class="text-black/70 text-sm mb-3">Proyek terbaik dalam mata pelajaran Pemrograman Dasar</p>
+                                <h5 class="text-xl title-font text-black mb-2"> 2rd Best Student at Junior High School 1 Malang</h5>
+                                <p class="text-black/70 text-sm mb-3">Nomor 2 lulusan terbaik SMP Negeri 1 Tahun 2024/2025 dengan rata rata 94</p>
                                 <span class="bg-teal text-black px-3 py-1 text-xs font-bold">2024</span>
                             </div>
                         </div>
@@ -243,8 +251,8 @@
                                 </svg>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-xl title-font text-black mb-2">Koordinator Event OSIS</h5>
-                                <p class="text-black/70 text-sm mb-3">Memimpin tim dalam menyelenggarakan acara sekolah yang sukses</p>
+                                <h5 class="text-xl title-font text-black mb-2">Ketua Organisasi Siswa Intra Sekolah SMP Negeri 1 Malang </h5>
+                                <p class="text-black/70 text-sm mb-3">Memimpin organisasi dalam sekolah yang bergerak dalam menajalnkan event dan juga menyelesaikkan permasalahan yang ada di sekolah</p>
                                 <span class="bg-teal text-black px-3 py-1 text-xs font-bold">2024</span>
                             </div>
                         </div>
