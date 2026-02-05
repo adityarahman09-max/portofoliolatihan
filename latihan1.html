@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Industrial Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#EFECE3',
+                        teal: '#8FABD4',
+                        blue: '#4A70A9',
+                        black: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 2px;
+        }
+        
+        .grain-texture {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="300"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" /%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noise)" opacity="0.05"/%3E%3C/svg%3E');
+        }
+        
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .line-break {
+            width: 0;
+            transition: width 0.6s ease-out;
+        }
+        
+        .line-break.active {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-cream grain-texture">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b-2 border-teal">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl title-font text-cream">ADITYA RAHMAN</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-cream hover:text-teal transition font-semibold">HOME</a>
+                    <a href="#about" class="text-cream hover:text-teal transition font-semibold">ABOUT</a>
+                    <a href="#projects" class="text-cream hover:text-teal transition font-semibold">PRESTASI</a>
+                    <a href="#contact" class="text-cream hover:text-teal transition font-semibold">CONTACT</a>
+                </div>
+                <button class="md:hidden text-cream" id="menuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block text-cream hover:text-teal transition font-semibold py-2">HOME</a>
+                <a href="#about" class="block text-cream hover:text-teal transition font-semibold py-2">ABOUT</a>
+                <a href="#projects" class="block text-cream hover:text-teal transition font-semibold py-2">PRESTASI</a>
+                <a href="#contact" class="block text-cream hover:text-teal transition font-semibold py-2">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>
